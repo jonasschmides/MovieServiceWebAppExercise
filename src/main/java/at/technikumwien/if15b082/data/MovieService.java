@@ -31,7 +31,7 @@ public class MovieService {
     LOGGER.debugf("> principal: %s", ctx.getCallerPrincipal());
 
     return em
-            .createNamedQuery("News.selectAll", Movie.class)
+            .createNamedQuery("Movies.selectAll", Movie.class)
             .getResultList();
   }
 }

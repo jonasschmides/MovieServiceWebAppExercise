@@ -17,8 +17,8 @@ public class Actor {
   private String lastNsme;
   private String sex;
   private Date birthDate;
-  @ManyToMany(targetEntity = Movie.class, fetch = FetchType.EAGER)
-  private Collection movies;
+  @ManyToMany(targetEntity = Movie.class, fetch=FetchType.EAGER)
+  private Collection<Movie> movies;
   
   
   public Actor() {}
